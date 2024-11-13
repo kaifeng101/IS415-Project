@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "Vietnam PCI Influence Analysis"
+  navbar:
+    left:
+    - href: about.qmd
+      text: About Us
+    - href: about.qmd
+      text: Project
+    - href: about.qmd
+      text: Poster
+    - href: about.qmd
+      text: User Guide
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+

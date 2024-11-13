@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Kai Feng">
+<meta name="dcterms.date" content="2024-09-24">
+
+<title>IS415 - Notes 6</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">IS415</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-notes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Notes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-notes">    
+        <li>
+    <a class="dropdown-item" href="../Notes/Lesson_1.html">
+ <span class="dropdown-text">Notes 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Notes/Lesson_2.html">
+ <span class="dropdown-text">Notes 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Notes/Lesson_3.html">
+ <span class="dropdown-text">Notes 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Notes/Lesson_5.html">
+ <span class="dropdown-text">Notes 5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Notes/Lesson_6.html">
+ <span class="dropdown-text">Notes 6</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Notes/Lesson_8.html">
+ <span class="dropdown-text">Notes 8</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Notes/Lesson_10.html">
+ <span class="dropdown-text">Notes 10</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-hands-on-exercise" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Hands-on Exercise</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-hands-on-exercise">    
+        <li>
+    <a class="dropdown-item" href="../Hands-on_Ex/Hands-on_Ex01/Hands-on_EX01.html">
+ <span class="dropdown-text">Hands-on Exercise 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Hands-on_Ex/Hands-on_Ex02/Hands-on_EX02.html">
+ <span class="dropdown-text">Hands-on Exercise 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Hands-on_Ex/Hands-on_Ex03/Hands-on_EX03.html">
+ <span class="dropdown-text">Hands-on Exercise 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Hands-on_Ex/Hands-on_Ex04/Hands-on_EX04.html">
+ <span class="dropdown-text">Hands-on Exercise 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Hands-on_Ex/Hands-on_Ex05/Hands-on_EX05.html">
+ <span class="dropdown-text">Hands-on Exercise 5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Hands-on_Ex/Hands-on_Ex06/Hands-on_EX06.html">
+ <span class="dropdown-text">Hands-on Exercise 6</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Hands-on_Ex/Hands-on_Ex07/Hands-on_EX07.html">
+ <span class="dropdown-text">Hands-on Exercise 7</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Hands-on_Ex/Hands-on_Ex08/Hands-on_EX08.html">
+ <span class="dropdown-text">Hands-on Exercise 8</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Hands-on_Ex/Hands-on_Ex09/Hands-on_EX09.html">
+ <span class="dropdown-text">Hands-on Exercise 9</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Hands-on_Ex/Hands-on_Ex11/Hands-on_EX11.html">
+ <span class="dropdown-text">Hands-on Exercise 11</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Hands-on_Ex/Hands-on_Ex12/Hands-on_EX12.html">
+ <span class="dropdown-text">Hands-on Exercise 12</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-in-class-exercise" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">In-class Exercise</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-in-class-exercise">    
+        <li>
+    <a class="dropdown-item" href="../In-class_Ex/In-class_Ex01/In-class_EX01.html">
+ <span class="dropdown-text">In-class Exercise 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../In-class_Ex/In-class_Ex02/In-class_EX02.html">
+ <span class="dropdown-text">In-class Exercise 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../In-class_Ex/In-class_Ex03/In-class_EX03.html">
+ <span class="dropdown-text">In-class Exercise 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../In-class_Ex/In-class_Ex04/In-class_EX04.html">
+ <span class="dropdown-text">In-class Exercise 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../In-class_Ex/In-class_Ex05/In-class_EX05.html">
+ <span class="dropdown-text">In-class Exercise 5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../In-class_Ex/In-class_Ex06/In-class_EX06.html">
+ <span class="dropdown-text">In-class Exercise 6</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../In-class_Ex/In-class_Ex09/In-class_EX09.html">
+ <span class="dropdown-text">In-class Exercise 9</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../In-class_Ex/In-class_Ex10/In-class_EX10.html">
+ <span class="dropdown-text">In-class Exercise 10</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../In-class_Ex/In-class_Ex11/In-class_EX11.html">
+ <span class="dropdown-text">In-class Exercise 11</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-take-home-exercise" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Take-home Exercise</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-take-home-exercise">    
+        <li>
+    <a class="dropdown-item" href="../Take-home_Ex/Take-home_Ex01/Take-home_EX01.html">
+ <span class="dropdown-text">Take-home Exercise 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Take-home_Ex/Take-home_Ex02/Take-home_EX02.html">
+ <span class="dropdown-text">Take-home Exercise 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Take-home_Ex/Take-home_Ex03/Take-home_EX03.html">
+ <span class="dropdown-text">Take-home Exercise 3</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#toblers-first-law-of-geography" id="toc-toblers-first-law-of-geography" class="nav-link active" data-scroll-target="#toblers-first-law-of-geography"><strong>Tobler’s First Law of Geography</strong></a></li>
+  <li><a href="#spatial-dependency" id="toc-spatial-dependency" class="nav-link" data-scroll-target="#spatial-dependency"><strong>Spatial Dependency</strong></a></li>
+  <li><a href="#types-of-autocorrelation" id="toc-types-of-autocorrelation" class="nav-link" data-scroll-target="#types-of-autocorrelation"><strong>Types of Autocorrelation</strong></a></li>
+  <li><a href="#local-vs-global-measures" id="toc-local-vs-global-measures" class="nav-link" data-scroll-target="#local-vs-global-measures"><strong>Local VS Global Measures</strong></a></li>
+  <li><a href="#global-spatial-autocorrelation" id="toc-global-spatial-autocorrelation" class="nav-link" data-scroll-target="#global-spatial-autocorrelation"><strong>Global Spatial Autocorrelation</strong></a>
+  <ul class="collapse">
+  <li><a href="#measures-of-global-spatial-autocorrelation" id="toc-measures-of-global-spatial-autocorrelation" class="nav-link" data-scroll-target="#measures-of-global-spatial-autocorrelation">Measures of Global Spatial Autocorrelation</a></li>
+  <li><a href="#measures-of-global-highlow-clustering-getis-ord-global-g" id="toc-measures-of-global-highlow-clustering-getis-ord-global-g" class="nav-link" data-scroll-target="#measures-of-global-highlow-clustering-getis-ord-global-g">Measures of Global High/Low Clustering: Getis-Ord Global G</a></li>
+  </ul></li>
+  <li><a href="#local-spatial-autocorrelation" id="toc-local-spatial-autocorrelation" class="nav-link" data-scroll-target="#local-spatial-autocorrelation"><strong>Local Spatial Autocorrelation</strong></a>
+  <ul class="collapse">
+  <li><a href="#local-spatial-autocorrelation-statistics" id="toc-local-spatial-autocorrelation-statistics" class="nav-link" data-scroll-target="#local-spatial-autocorrelation-statistics">Local Spatial Autocorrelation Statistics</a></li>
+  <li><a href="#local-indicator-of-spatial-association-lisa" id="toc-local-indicator-of-spatial-association-lisa" class="nav-link" data-scroll-target="#local-indicator-of-spatial-association-lisa">Local Indicator of Spatial Association (LISA)</a></li>
+  <li><a href="#fixed-vs-adaptive-weighting-scheme" id="toc-fixed-vs-adaptive-weighting-scheme" class="nav-link" data-scroll-target="#fixed-vs-adaptive-weighting-scheme">Fixed VS Adaptive Weighting Scheme</a></li>
+  <li><a href="#best-practice-guidelines" id="toc-best-practice-guidelines" class="nav-link" data-scroll-target="#best-practice-guidelines">Best Practice Guidelines</a></li>
+  </ul></li>
+  <li><a href="#emerging-hot-spot-analysis-ehsa" id="toc-emerging-hot-spot-analysis-ehsa" class="nav-link" data-scroll-target="#emerging-hot-spot-analysis-ehsa"><strong>Emerging Hot Spot Analysis (EHSA)</strong></a>
+  <ul class="collapse">
+  <li><a href="#mann-kendall-test-for-trend" id="toc-mann-kendall-test-for-trend" class="nav-link" data-scroll-target="#mann-kendall-test-for-trend">Mann-Kendall Test for Trend</a></li>
+  <li><a href="#ehsa-patterns" id="toc-ehsa-patterns" class="nav-link" data-scroll-target="#ehsa-patterns">EHSA Patterns</a></li>
+  <li><a href="#spacetime-cube" id="toc-spacetime-cube" class="nav-link" data-scroll-target="#spacetime-cube">Spacetime Cube</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Notes 6</h1>
+<p class="subtitle lead">Global and Local Measures of Spatial Autocorrelation</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kai Feng </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 24, 2024</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">September 24, 2024</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><br><br></p>
+<section id="toblers-first-law-of-geography" class="level2">
+<h2 class="anchored" data-anchor-id="toblers-first-law-of-geography"><strong>Tobler’s First Law of Geography</strong></h2>
+<p><code>“Everything is related to everything else, but near things are more related than distant things.”</code></p>
+</section>
+<section id="spatial-dependency" class="level2">
+<h2 class="anchored" data-anchor-id="spatial-dependency"><strong>Spatial Dependency</strong></h2>
+<ul>
+<li><p>refers to the way that the value of a variable at one location is influenced by values at neighboring locations</p></li>
+<li><p>highlights the interconnectedness of spatial data</p></li>
+<li><p>Similar values are likely to cluster than randomly distributed</p></li>
+</ul>
+</section>
+<section id="types-of-autocorrelation" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-autocorrelation"><strong>Types of Autocorrelation</strong></h2>
+<ul>
+<li><p><strong>Positive Autocorrelation</strong>:high rainfall areas likely to be near other high rainfall areas</p></li>
+<li><p><strong>Negative Autocorrleation:</strong> eg. a region where high property values are next to areas of low property values.</p></li>
+</ul>
+<p><br><br></p>
+</section>
+<section id="local-vs-global-measures" class="level2">
+<h2 class="anchored" data-anchor-id="local-vs-global-measures"><strong>Local VS Global Measures</strong></h2>
+<p>Global</p>
+<ul>
+<li>Summary for entire area. Eg, Overall, are crime rates clumped together or not</li>
+</ul>
+<p>Local</p>
+<ul>
+<li>Zoom on specific area. Eg. Where exactly are clusters or unusal spots in this area</li>
+</ul>
+<p><br><br></p>
+</section>
+<section id="global-spatial-autocorrelation" class="level1">
+<h1><strong>Global Spatial Autocorrelation</strong></h1>
+<section id="measures-of-global-spatial-autocorrelation" class="level2">
+<h2 class="anchored" data-anchor-id="measures-of-global-spatial-autocorrelation">Measures of Global Spatial Autocorrelation</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>* Can use both together -&gt; if Moran’s I shows clustering + Geary’s C indicate low differences between neighbors = strengthen the conclusion that there’s a strong spatial pattern</p>
+<p>The 2 measures are inversely related -&gt; High C correspond to Low I</p>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Moran’s I</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Geary’s c</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>broad view of overall spatial patterns—are similar values clustered or dispersed?</p>
+<ul>
+<li><p>Negative (I &lt;0) -&gt; Dissimilar values, eg. High value next to low value</p></li>
+<li><p>Positive (I&gt;0) -&gt; Lots of similar values nearby, eg high temp areas near each other</p></li>
+<li><p>Close to 0 -&gt; No real pattern</p></li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>local differences between neighbors—how similar or different are individual locations from their immediate surroundings?</p>
+<ul>
+<li><p>Small c (&lt;1) -&gt; neighbours are similar -<strong>Clustered</strong></p></li>
+<li><p>(C = 1) -&gt; observations are arranged randomly over space</p></li>
+<li><p>Large c (&gt; 1) -&gt; neighbours are very different from u <strong>-Dispersed</strong></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Z-Score</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">P-value</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Spatial Randomness (Null Hypo)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<ul>
+<li><p>See how far away a value is from the avg(mean) in S.D.</p></li>
+<li><p>High score = value is much higher than avg</p></li>
+</ul>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<ul>
+<li><p>Help to&nbsp; decide if result are significant or due to chance</p></li>
+<li><p>Low p = unlikely to happen by chance, so reject null hypo</p></li>
+<li><p>Fail to reject null hypo if p-value &gt; alpha value (0.05)<strong>[95% confidence]</strong></p></li>
+</ul>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<ul>
+<li><p>Assumes the value at 1 place doesn’t depend on any value nearby</p></li>
+<li><p>So, moving values around won’t change the overall info</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+If your Data violates assumptions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If Moran’s I and Geary’s C aren’t true, can use Monte Carlo simulation</p>
+<ul>
+<li><p>Simulate Moran’s I many times with the assumption that there’s no pattern</p></li>
+<li><p>Assigning all regions the mean value</p></li>
+<li><p>Calculate Moran’s I</p></li>
+<li><p>Compare it with Actual Moran’s I value to get a p-value</p></li>
+</ul>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="measures-of-global-highlow-clustering-getis-ord-global-g" class="level2">
+<h2 class="anchored" data-anchor-id="measures-of-global-highlow-clustering-getis-ord-global-g">Measures of Global High/Low Clustering: Getis-Ord Global G</h2>
+<ul>
+<li><p>measures how clustered/spread out high &amp; low values are among neighbouring areas.</p></li>
+<li><p>The variables must contain only positive</p></li>
+<li><p>If <strong>P-Value Not Significant (High P-value)</strong>: can’t reject the null hypothesis. The pattern could just be random.</p></li>
+<li><p>If <strong>P-Value Significant (Low P-value):</strong> can reject null hypo</p>
+<ul>
+<li><p>+ Z score -&gt; High values are more clustered together than expected by chance.</p></li>
+<li><p>- Z score -&gt; Low values are more clustered together than expected by chance.</p></li>
+</ul></li>
+</ul>
+<p><br><br></p>
+</section>
+</section>
+<section id="local-spatial-autocorrelation" class="level1">
+<h1><strong>Local Spatial Autocorrelation</strong></h1>
+<section id="local-spatial-autocorrelation-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="local-spatial-autocorrelation-statistics">Local Spatial Autocorrelation Statistics</h2>
+<ul>
+<li><p>to understand the distribution patterns.</p></li>
+<li><p>Uses methods focusing on identifying <strong>how attribute values</strong> (eg. crime rates, disease incidence) <strong>are spatially related</strong> to each other <strong>across different locations</strong>, <strong>revealing spatial clusters/anomalies</strong></p></li>
+<li><p>Common methods:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Local Moran’s I</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Local Geary’s c</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Getis-Ord Gi*</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<ul>
+<li><p>Identifies clusters of similar values (high-high or low-low) or spatial outliers (high-low or low-high).</p></li>
+<li><p>Indicates if a location has attribute values similar to its neighbors</p></li>
+</ul>
+<p><br></p>
+<p><strong>Interpretation of Local Moran</strong></p>
+<ul>
+<li><p><strong>Outlier:</strong> if it has low values while surrounding have high values</p></li>
+<li><p><strong>Cluster:</strong> You and surrounding areas have high values</p></li>
+<li><p><strong>P-value</strong> need to be <strong>small</strong> enough for cluster/outlier to be considered <strong>Statistically Significant</strong></p></li>
+<li><p>alpha-values are 0.1(90%), 0.05 (95%), 0.01 (99%), 0.001 (99.9%) confidence intervals</p></li>
+</ul>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<ul>
+<li><p>Similar to Local Moran’s I but focuses more on differences between adjacent locations</p></li>
+<li><p>Used to detect local spatial heterogeneity</p></li>
+</ul>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<ul>
+<li><p>Identifies hot spots, cold spots Area Analysis <strong>(HCSA)</strong></p></li>
+<li><p>Useful to detect areas with significantly high or low attribute values</p></li>
+</ul>
+<p><br></p>
+<p><img src="https://is415-ay2024-25t1.netlify.app/lesson/lesson06/img/image7-18.jpg" class="img-fluid" width="288"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>With * consider observation itself</p>
+</div>
+</div>
+</div>
+</div>
+</div></li>
+<li><p>Use case: Detect clusters/outliers, hot spot or cold spot, patterns in data that don’t change over distance</p></li>
+</ul>
+<p><br></p>
+</section>
+<section id="local-indicator-of-spatial-association-lisa" class="level2">
+<h2 class="anchored" data-anchor-id="local-indicator-of-spatial-association-lisa">Local Indicator of Spatial Association (LISA)</h2>
+<ul>
+<li><p>help to find clusters/unusual areas in a specific area &amp; ensure it align with the overall trend of the entire area -&gt; When you add up all the LISA values, it should reflect overall pattern of the entire area</p></li>
+<li><p>Detecting Spatial Clusters &amp; Outliers:</p>
+<ul>
+<li>calculate local statistic value, a Z-score, a P-value, a code representing cluster type for each statistically significance of the computed index values</li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://is415-ay2024-25t1.netlify.app/lesson/lesson06/img/image7-10.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p><br></p>
+</section>
+<section id="fixed-vs-adaptive-weighting-scheme" class="level2">
+<h2 class="anchored" data-anchor-id="fixed-vs-adaptive-weighting-scheme">Fixed VS Adaptive Weighting Scheme</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Fixed Weighting Scheme</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Adaptive Weighting Scheme</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p><img src="https://is415-ay2024-25t1.netlify.app/lesson/lesson06/img/image7-20.jpg" class="img-fluid"></p>
+<ul>
+<li><p>Uses a set distance to determine neighbors for each feature.</p></li>
+<li><p><strong>Considerations:</strong></p>
+<ul>
+<li><p>Every feature should have at least one neighbor within this distance.</p></li>
+<li><p>No feature should have <em>all</em> other features as neighbors (the distance shouldn’t be too large).</p></li>
+<li><p>Ideally, each feature should have around 8 neighbors to get reliable results.</p>
+<p><strong>Issues:</strong></p>
+<ul>
+<li><p>In areas with few data points, estimates can be unreliable.</p></li>
+<li><p>In dense areas, this scheme might miss small local patterns.</p></li>
+<li><p>In very sparse areas, it might not work at all because there aren’t enough neighbors to analyze properly.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p><img src="https://is415-ay2024-25t1.netlify.app/lesson/lesson06/img/image7-21.jpg" class="img-fluid"></p>
+<ul>
+<li><p>Adjusts the distance based on data density.</p></li>
+<li><p><strong>Features:</strong></p>
+<ul>
+<li><p>In dense areas, the “neighborhood” is smaller to capture local variations.</p></li>
+<li><p>In sparse areas, the “neighborhood” is larger to include enough neighbors.</p></li>
+<li><p>Often, this scheme uses the nearest number of neighbors instead of a fixed distance. This makes it more flexible and accurate in varied data densities.</p></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="best-practice-guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="best-practice-guidelines">Best Practice Guidelines</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">To get Reliable Results</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Choosing a Spatial Weighting Method</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false">Choosing a Fixed-Distance Band</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<ul>
+<li><p>Ensure your dataset has at least 30 features.</p></li>
+<li><p>Use continuous numeric data (e.g., counts, rates). Avoid categorical data.</p></li>
+</ul>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<ul>
+<li><p><strong>Polygon Contiguity:</strong></p>
+<ul>
+<li><p>Good for similar-sized polygons.</p></li>
+<li><p>Works when spatial interaction is stronger between neighboring polygons.</p></li>
+<li><p>Use “row standardization” to balance the influence of polygons with different numbers of neighbors.</p></li>
+</ul></li>
+<li><p><strong>Fixed Distance:</strong></p>
+<ul>
+<li><p>Ideal for point data or polygons with varying sizes.</p></li>
+<li><p>Ensures consistent analysis by maintaining the same distance for all points.</p></li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li><p><strong>Inverse Distance:</strong></p>
+<ul>
+<li><p>Suitable for continuous data or processes where closer features interact more.</p></li>
+<li><p>Can be computationally heavy because every feature can be a neighbor to every other feature.</p></li>
+</ul></li>
+<li><p><strong>K-Nearest Neighbors:</strong></p>
+<ul>
+<li><p>Guarantees a minimum number of neighbors for each feature.</p></li>
+<li><p>Useful when data values are skewed, ensuring context with at least eight neighbors.</p></li>
+<li><p>Adjusts for varying feature distribution, adapting to sparse or dense areas.</p></li>
+<li><p>Focuses on the number of neighbors, not fixed distance.</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
+<ul>
+<li><p>Select a distance based on the spatial scale of the phenomenon you’re studying.</p></li>
+<li><p>Ensure all features have at least one neighbor within this distance.</p></li>
+<li><p>Don’t worry about finding a single “correct” distance—multiple processes can influence clustering.</p></li>
+<li><p>Avoid making every feature a neighbor to all others.</p></li>
+<li><p>For skewed data, aim for each feature to have about eight neighbors.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<p><br><br></p>
+</section>
+</section>
+<section id="emerging-hot-spot-analysis-ehsa" class="level1">
+<h1><strong>Emerging Hot Spot Analysis (EHSA)</strong></h1>
+<p>Combines both <strong>Hot Spot Analysis + Mann-Kendall Test</strong></p>
+<section id="mann-kendall-test-for-trend" class="level2">
+<h2 class="anchored" data-anchor-id="mann-kendall-test-for-trend">Mann-Kendall Test for Trend</h2>
+<ul>
+<li><p><strong>Purpose</strong>: Determines if a set of values is increasing, decreasing, or stable over time.</p></li>
+<li><p><strong>Non-Parametric</strong>: Works for any data distribution (doesn’t need to be normal).</p></li>
+<li><p><strong>No Serial Correlation</strong>: Your data points should not be influenced by previous values in the series.</p></li>
+<li><p><strong>Hypotheses:</strong></p>
+<ul>
+<li><p><strong>Null Hypothesis</strong>: No trend exists (values are stable over time).</p></li>
+<li><p><strong>Alternative Hypothesis</strong>: A trend exists (values are consistently increasing or decreasing).</p></li>
+</ul></li>
+<li><p><strong>Limitations:</strong></p>
+<ul>
+<li><p>It detects the direction of the trend but not how big the change is.</p></li>
+<li><p>Needs at least 8-10 data points for reliable results. Fewer points increase the risk of missing real trends.</p></li>
+</ul></li>
+<li><p>Data Requirements for Mann-Kendall Test:</p>
+<ol type="1">
+<li><p><strong>No Seasonal Data</strong>: Avoid data that has regular fluctuations (e.g., only collected in summer and winter).</p></li>
+<li><p><strong>No Covariates</strong>: Other factors shouldn’t influence your data. The test should only assess the trend of the specific variable you’re interested in.</p></li>
+<li><p><strong>One Data Point per Time Period</strong>: If you have multiple data points for the same time, use the median value.</p></li>
+</ol></li>
+</ul>
+</section>
+<section id="ehsa-patterns" class="level2">
+<h2 class="anchored" data-anchor-id="ehsa-patterns">EHSA Patterns</h2>
+<ul>
+<li><p>No pattern, New hot spot, Intensifying hot spot, Diminishing hot spot, Historical hot spot, Persistent hot spot</p></li>
+<li><p>Consecutive hot spot -&gt; A place that recently became a hot spot with consecutive periods showing significant hot spot activity</p></li>
+<li><p>Sporadic hot spot -&gt; A location that is a significant hot spot in the most recent time period but has had a mixed history of being a hot spot in the past. (on &amp; off)</p></li>
+<li><p>Oscillating hot spot -&gt; A location that is a significant hot spot in the most recent time period but has previously been a significant cold spot.</p></li>
+</ul>
+</section>
+<section id="spacetime-cube" class="level2">
+<h2 class="anchored" data-anchor-id="spacetime-cube">Spacetime Cube</h2>
+<ul>
+<li><p>a structure where every location has a value for every point in time, meaning each location has a complete time series of data.</p></li>
+<li><p><strong>Key Terms</strong>:</p>
+<ul>
+<li><p><strong>Bin</strong>: The basic unit of a spacetime cube, representing a specific combination of a location and a time point.</p></li>
+<li><p><strong>Time Slice</strong>: The collection of all bins (locations) for a specific time point.</p></li>
+<li><p><strong>Bin Time-Series</strong>: The collection of all bins at a particular location across different time points.</p></li>
+</ul></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
