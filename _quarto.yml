@@ -11,7 +11,7 @@ website:
       text: Project
     - href: poster.qmd
       text: Poster
-    - href: about.qmd
+    - href: user_guide.qmd
       text: User Guide
 
 format:

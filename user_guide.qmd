@@ -1,0 +1,180 @@
+---
+title: "User Guide"
+author: "Kai Feng & Edwin"
+---
+
+# User Guide
+
+## User Guide for PCI Spatial Pattern Analysis and Hotspots Analysis
+
+#### ***Local Moran of PCI***
+
+This section displays the LISA map, which highlights local clusters and spatial outliers based on Local Moran’s I statistic.
+
+1.  **Mapping Variable (Year)**: Select the PCI year to analyze.
+
+    -   Options are dynamically populated based on available data
+
+        -   Y2012-Y2022
+
+2.  **Contiguity Method**: Choose the spatial contiguity method.
+
+    -   Options: `Queen` (default) or `Rook`.
+
+    -   "Queen" considers all surrounding areas as neighbors, while "Rook" only considers those sharing borders. Selecting the appropriate method affects which areas are considered spatially related, impacting the detection of clusters or patterns.
+
+3.  **Spatial Weights Style**: Select a weighting style for spatial association.
+
+    -   Options: `W` (Row standardized), `B` (Binary), `C` (Globally standardized), `U` (C / number of neighbors), `minmax`, `S` (Variance).
+
+    -   This setting ensures that neighboring areas are weighted consistently, making the spatial correlation measures more meaningful and comparable across regions.
+
+4.  **Number of Simulations**: Set the number of simulations for significance testing (between 99 and 499).
+
+    -   Users can adjust this based on the desired balance between accuracy and computational time.
+
+5.  **Confidence Level**: Select the confidence level for the LISA significance results.
+
+    -   Options: 95% (0.05) or 99% (0.01).
+
+    -   A higher confidence level (e.g., 99%) reduces the chance of false positives, ensuring the detected patterns are statistically reliable.
+
+6.  **LISA Classification**: Select a classification method for the LISA clusters.
+
+    -   Options: `mean`, `median`, `pysal`.
+
+    -    This affects the interpretation of clusters (e.g., high-high or low-low areas) and helps customize the analysis to specific policy or research needs.
+
+7.  **Local Moran’s Statistic**: Choose the type of Local Moran’s statistic to display.
+
+    -   Options: `local moran(ii)`, `expectation(eii)`, `variance(var_ii)`, `std deviation(z_ii)`, `P-value`
+
+![](images/photo_2024-11-13_21-12-31.jpg){width="415"}
+
+The Main Panel displays the results based on the selected calibration inputs:
+
+**Local Moran of PCI**: The LISA map shows spatial clusters of similar PCI levels and outliers, indicating local dependencies or deviations.
+
+![](images/clipboard-3822262858.png)
+
+#### *Gi Hotspot Analysis of PCI*\*
+
+In this section, users can view the Gi\* hotspot map, which identifies spatial clusters of high and low PCI values.
+
+1.  **Mapping Variable (Year)**: Select the PCI year to analyze.
+
+    -   Options: 2019, 2020, 2021, 2022.
+
+2.  **Classification Method**: Choose a method for classifying PCI values on the map.
+
+    -   Options: `cont`, `equal`, `pretty`, `quantile`, `kmeans`, `hclust`, `bclust`, `fisher`, `jenks`.
+
+    -   This dropdown lets users choose the classification method for dividing the data into classes or intervals.
+
+3.  **Number of Classes**: Set the number of classification levels (between 5 and 10) for the PCI values.
+
+    -    A slider allows the user to set the number of data classes, which are the ranges into which the data is divided for color-coding on the map
+
+4.  **Colour Scheme**: Select a color scheme to visualize PCI hotspots and cold spots.
+
+    -   Options: Blues, Reds, Greens, Yellow-Orange-Red, Yellow-Orange-Brown, Yellow-Green, Orange-Red.
+
+    -   Users can choose a color scheme to represent different classes on the map.
+
+5.  **Level of Transparency**: Adjust the map’s opacity for better visual contrast (range: 0 to 1).
+
+    -   This slider controls the transparency of the map layer, with a scale from 0 (fully transparent) to 1 (fully opaque).
+
+![](images/photo_2024-11-10_20-32-08.jpg)
+
+The Main Panel displays the results based on the selected calibration inputs:
+
+**Emerging Hotspot Analysis of PCI**: The Gi\* hotspot map highlights significant PCI hotspots (high PCI clusters) and cold spots (low PCI clusters) across provinces for the selected year.
+
+![](images/photo_2024-11-10_20-32-08-01.jpg)
+
+## User Guide for FDI Spatial Pattern Analysis and Hotspots Analysis
+
+#### ***Local Moran of FDI***
+
+This section displays the LISA map, which highlights local clusters and spatial outliers based on Local Moran’s I statistic.
+
+1.  **Mapping Variable (Year)**: Select the FDI category to analyze.
+
+    -   Options are dynamically populated based on available data
+
+        -   T1: Total Projects
+
+        -   T2: Total Registered Capital
+
+2.  **Contiguity Method**: Choose the spatial contiguity method.
+
+    -   Options: `Queen` (default) or `Rook`.
+
+    -   "Queen" considers all surrounding areas as neighbors, while "Rook" only considers those sharing borders. Selecting the appropriate method affects which areas are considered spatially related, impacting the detection of clusters or patterns.
+
+3.  **Spatial Weights Style**: Select a weighting style for spatial association.
+
+    -   Options: `W` (Row standardized), `B` (Binary), `C` (Globally standardized), `U` (C / number of neighbors), `minmax`, `S` (Variance).
+
+    -   This setting ensures that neighboring areas are weighted consistently, making the spatial correlation measures more meaningful and comparable across regions.
+
+4.  **Number of Simulations**: Set the number of simulations for significance testing (between 99 and 499).
+
+    -   Users can adjust this based on the desired balance between accuracy and computational time.
+
+5.  **Confidence Level**: Select the confidence level for the LISA significance results.
+
+    -   Options: 95% (0.05) or 99% (0.01).
+
+    -   A higher confidence level (e.g., 99%) reduces the chance of false positives, ensuring the detected patterns are statistically reliable.
+
+6.  **LISA Classification**: Select a classification method for the LISA clusters.
+
+    -   Options: `mean`, `median`, `pysal`.
+
+    -    This affects the interpretation of clusters (e.g., high-high or low-low areas) and helps customize the analysis to specific policy or research needs.
+
+7.  **Local Moran’s Statistic**: Choose the type of Local Moran’s statistic to display.
+
+    -   Options: `local moran(ii)`, `expectation(eii)`, `variance(var_ii)`, `std deviation(z_ii)`, `P-value`
+
+![The Main Panel displays the results based on the selected calibration inputs:](images/photo_2024-11-10_20-32-05-01.jpg)
+
+**Local Moran of FDI**: The LISA map shows spatial clusters of similar total projects and total registered capitals levels and outliers, indicating local dependencies or deviations.
+
+#### *Gi Hotspot Analysis of PCI*\*
+
+In this section, users can view the Gi\* hotspot map, which identifies spatial clusters of high and low PCI values.
+
+1.  **Mapping Variable (Year)**: Select the FDI category to analyze.
+
+    -   Options: Total Projects and Total registered capital
+
+2.  **Classification Method**: Choose a method for classifying PCI values on the map.
+
+    -   Options: `cont`, `equal`, `pretty`, `quantile`, `kmeans`, `hclust`, `bclust`, `fisher`, `jenks`.
+
+    -   This dropdown lets users choose the classification method for dividing the data into classes or intervals.
+
+3.  **Number of Classes**: Set the number of classification levels (between 5 and 10) for the PCI values.
+
+    -    A slider allows the user to set the number of data classes, which are the ranges into which the data is divided for color-coding on the map
+
+4.  **Colour Scheme**: Select a color scheme to visualize PCI hotspots and cold spots.
+
+    -   Options: Blues, Reds, Greens, Yellow-Orange-Red, Yellow-Orange-Brown, Yellow-Green, Orange-Red.
+
+    -   Users can choose a color scheme to represent different classes on the map.
+
+5.  **Level of Transparency**: Adjust the map’s opacity for better visual contrast (range: 0 to 1).
+
+    -   This slider controls the transparency of the map layer, with a scale from 0 (fully transparent) to 1 (fully opaque).
+
+![](images/photo_2024-11-10_20-32-10.jpg)
+
+The Main Panel displays the results based on the selected calibration inputs:
+
+**Emerging Hotspot Analysis of PCI**: The Gi\* hotspot map highlights significant FDI category hotspots (high PCI clusters) and cold spots (low PCI clusters) across provinces for the selected year.
+
+![](images/clipboard-4031888003.png)
