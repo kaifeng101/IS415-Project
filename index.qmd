@@ -1,5 +1,21 @@
 ---
-title: "IS455"
+title: "Project: Vietnam PCI Influence Analysis on FDI"
+execute:
+  eval: true
+  echo: true
+  freeze: true
 ---
 
-Welcome to **IS455 Geospatial Analytics and Application**. In this website, you will find my coursework prepared for this course.
+![](images/clipboard-919235155.png){fig-align="center" width="470"}
+
+<br>
+
+Welcome to the Vietnam PCI Influence Analysis on FDI project!
+
+In this project, we explore how various Provincial Competitiveness Index (PCI) factors influence Foreign Direct Investment (FDI) across Vietnam.
+
+Through interactive visualizations and data models, we analyze the relationship between key PCI dimensions and FDI outcomes, providing valuable insights for understanding regional competitiveness and investment patterns.
+
+Explore our findings and see how different factors contribute to shaping FDI across the country.
+
+<br>

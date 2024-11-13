@@ -17,6 +17,8 @@ author: "Kai Feng & Edwin Tan"
 
 **Statement of Problem:** Understanding the spatial and economic relationship between PCI sub-indices and FDI is essential to fostering balanced development across regions in Vietnam.
 
+<br>
+
 # **Motivation**
 
 ## **Why This Matters:**
@@ -31,7 +33,9 @@ author: "Kai Feng & Edwin Tan"
 
 -   **Dynamic Spatial Relationships**: Emerging investment hotspots and regional competitiveness are continuously evolving, making static analysis ineffective for long-term policy decisions.
 
-# Objectives
+<br>
+
+# **Objectives**
 
 -   **Analyze Spatial Patterns of PCI and FDI**\
     Use spatial analysis to identify clusters of high and low competitiveness across Vietnamese provinces and examine how these patterns correlate with FDI distribution.
@@ -42,10 +46,24 @@ author: "Kai Feng & Edwin Tan"
 -   **Examine PCI Sub-Index Impact on FDI**\
     Conduct regression analysis to determine which PCI sub-indices most strongly influence FDI, providing insights into key drivers of investment attraction.
 
-# Description
+<br>
+
+# **Description**
 
 Our project explores how **Provincial Competitiveness Index (PCI)** factors impact **Foreign Direct Investment (FDI) across Vietnam's provinces**. FDI is crucial for economic development, yet factors influencing its distribution at the provincial level are complex and multifaceted. Our study aims to i**dentify the local and regional dynamics** driving investment attraction, **enabling policymakers to address economic disparities and promote balanced development**.
 
 To achieve this, we apply **spatial analytics methods,** including spatial pattern analysis and hotspot analysis, to examine how neighboring regions' competitiveness **correlates with local FDI levels**. By identifying clusters of **high and low competitiveness and regions** with extreme FDI values, we uncover key influencing factors that help explain regional investment patterns.
 
 Our approach includes building both global and local models using **multiple linear regression and stepwise model selection**. These models highlight how PCI dimensions like entry costs and transparency influence FDI, with visualizations that display the **strength of relationships and model fit across provinces**. Local models provide province-specific insights, offering a tailored understanding of where policies may need improvement.
+
+<br>
+
+# **Our Analysis to build our features**
+
+### Spatial Analytics method
+
+<https://is415t1.netlify.app/take_home_ex/take_home_ex3/take_home_ex3>
+
+### Explanatory Model Analysis
+
+<https://isss-608-ay2024-23t1.netlify.app/take-home_ex/take-home_ex03/take-home_ex03>
