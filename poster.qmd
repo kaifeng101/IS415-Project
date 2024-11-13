@@ -1,0 +1,10 @@
+---
+title: "Project: Vietnam PCI Influence Analysis on FDI"
+date: "Nov 13, 2024"
+execute:
+  eval: true
+  echo: true
+  freeze: true
+---
+
+![](images/Group 1_Poster-01.jpg)

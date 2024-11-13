@@ -1,0 +1,15 @@
+{
+  "hash": "80f44fdd69a2055ba391b829dc51c212",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Project: Vietnam PCI Influence Analysis on FDI\"\ndate: \"Nov 13, 2024\"\nexecute:\n  eval: true\n  echo: true\n  freeze: true\n---\n\n\nAbout this site\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
