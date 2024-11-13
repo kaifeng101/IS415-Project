@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Kai Feng &amp; Edwin">
 
-<title>Vietnam PCI Influence Analysis - Project: Vietnam PCI Influence Analysis on FDI</title>
+<title>Vietnam PCI Influence Analysis - User Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -89,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./aboutus.html" aria-current="page"> 
+    <a class="nav-link" href="./aboutus.html"> 
 <span class="menu-text">About Us</span></a>
   </li>  
   <li class="nav-item">
@@ -101,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Poster</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./user_guide.html"> 
+    <a class="nav-link active" href="./user_guide.html" aria-current="page"> 
 <span class="menu-text">User Guide</span></a>
   </li>  
 </ul>
@@ -120,11 +121,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#about-us" id="toc-about-us" class="nav-link active" data-scroll-target="#about-us">About Us</a></li>
-  <li><a href="#meet-our-team" id="toc-meet-our-team" class="nav-link" data-scroll-target="#meet-our-team">Meet our Team</a>
+  <li><a href="#user-guide" id="toc-user-guide" class="nav-link active" data-scroll-target="#user-guide">User Guide</a>
   <ul class="collapse">
-  <li><a href="#edwin-tan" id="toc-edwin-tan" class="nav-link" data-scroll-target="#edwin-tan">Edwin Tan</a></li>
-  <li><a href="#kai-feng" id="toc-kai-feng" class="nav-link" data-scroll-target="#kai-feng">Kai Feng</a></li>
+  <li><a href="#user-guide-for-pci-spatial-pattern-analysis-and-hotspots-analysis" id="toc-user-guide-for-pci-spatial-pattern-analysis-and-hotspots-analysis" class="nav-link" data-scroll-target="#user-guide-for-pci-spatial-pattern-analysis-and-hotspots-analysis">User Guide for PCI Spatial Pattern Analysis and Hotspots Analysis</a></li>
+  <li><a href="#user-guide-for-fdi-spatial-pattern-analysis-and-hotspots-analysis" id="toc-user-guide-for-fdi-spatial-pattern-analysis-and-hotspots-analysis" class="nav-link" data-scroll-target="#user-guide-for-fdi-spatial-pattern-analysis-and-hotspots-analysis">User Guide for FDI Spatial Pattern Analysis and Hotspots Analysis</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -134,13 +134,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Project: Vietnam PCI Influence Analysis on FDI</h1>
+<h1 class="title">User Guide</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kai Feng &amp; Edwin </p>
+          </div>
+  </div>
     
   
     
@@ -151,27 +157,173 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><br></p>
-<section id="about-us" class="level1">
-<h1>About Us</h1>
-<p>We are a dedicated two-member team, currently in our penultimate (third) year at the School of Computing and Information Systems. With a shared passion for technology and data-driven solutions, we focus on leveraging our expertise to create impactful, user-centric applications.</p>
-<p>Our academic journey has equipped us with solid skills in computing, analytics, and problem-solving, which we apply to every project. Driven by a commitment to innovation and excellence, we strive to build solutions that make a difference in today’s tech-driven world.</p>
-<p><br></p>
+<section id="user-guide" class="level1">
+<h1>User Guide</h1>
+<section id="user-guide-for-pci-spatial-pattern-analysis-and-hotspots-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="user-guide-for-pci-spatial-pattern-analysis-and-hotspots-analysis">User Guide for PCI Spatial Pattern Analysis and Hotspots Analysis</h2>
+<section id="local-moran-of-pci" class="level4">
+<h4 class="anchored" data-anchor-id="local-moran-of-pci"><strong><em>Local Moran of PCI</em></strong></h4>
+<p>This section displays the LISA map, which highlights local clusters and spatial outliers based on Local Moran’s I statistic.</p>
+<ol type="1">
+<li><p><strong>Mapping Variable (Year)</strong>: Select the PCI year to analyze.</p>
+<ul>
+<li><p>Options are dynamically populated based on available data</p>
+<ul>
+<li>Y2012-Y2022</li>
+</ul></li>
+</ul></li>
+<li><p><strong>Contiguity Method</strong>: Choose the spatial contiguity method.</p>
+<ul>
+<li><p>Options: <code>Queen</code> (default) or <code>Rook</code>.</p></li>
+<li><p>“Queen” considers all surrounding areas as neighbors, while “Rook” only considers those sharing borders. Selecting the appropriate method affects which areas are considered spatially related, impacting the detection of clusters or patterns.</p></li>
+</ul></li>
+<li><p><strong>Spatial Weights Style</strong>: Select a weighting style for spatial association.</p>
+<ul>
+<li><p>Options: <code>W</code> (Row standardized), <code>B</code> (Binary), <code>C</code> (Globally standardized), <code>U</code> (C / number of neighbors), <code>minmax</code>, <code>S</code> (Variance).</p></li>
+<li><p>This setting ensures that neighboring areas are weighted consistently, making the spatial correlation measures more meaningful and comparable across regions.</p></li>
+</ul></li>
+<li><p><strong>Number of Simulations</strong>: Set the number of simulations for significance testing (between 99 and 499).</p>
+<ul>
+<li>Users can adjust this based on the desired balance between accuracy and computational time.</li>
+</ul></li>
+<li><p><strong>Confidence Level</strong>: Select the confidence level for the LISA significance results.</p>
+<ul>
+<li><p>Options: 95% (0.05) or 99% (0.01).</p></li>
+<li><p>A higher confidence level (e.g., 99%) reduces the chance of false positives, ensuring the detected patterns are statistically reliable.</p></li>
+</ul></li>
+<li><p><strong>LISA Classification</strong>: Select a classification method for the LISA clusters.</p>
+<ul>
+<li><p>Options: <code>mean</code>, <code>median</code>, <code>pysal</code>.</p></li>
+<li><p>This affects the interpretation of clusters (e.g., high-high or low-low areas) and helps customize the analysis to specific policy or research needs.</p></li>
+</ul></li>
+<li><p><strong>Local Moran’s Statistic</strong>: Choose the type of Local Moran’s statistic to display.</p>
+<ul>
+<li>Options: <code>local moran(ii)</code>, <code>expectation(eii)</code>, <code>variance(var_ii)</code>, <code>std deviation(z_ii)</code>, <code>P-value</code></li>
+</ul></li>
+</ol>
+<p><img src="images/photo_2024-11-13_21-12-31.jpg" class="img-fluid" width="415"></p>
+<p>The Main Panel displays the results based on the selected calibration inputs:</p>
+<p><strong>Local Moran of PCI</strong>: The LISA map shows spatial clusters of similar PCI levels and outliers, indicating local dependencies or deviations.</p>
+<p><img src="images/clipboard-3822262858.png" class="img-fluid"></p>
 </section>
-<section id="meet-our-team" class="level1">
-<h1>Meet our Team</h1>
-<p><img src="images/clipboard-659646825.jpeg" class="img-fluid" width="156"></p>
-<section id="edwin-tan" class="level3">
-<h3 class="anchored" data-anchor-id="edwin-tan">Edwin Tan</h3>
-<p><a href="https://www.linkedin.com/in/edwin-tan-jun-lin-a20a4b174/?trk=contact-info">LinkedIn</a></p>
-<p><br></p>
-<p><img src="images/clipboard-1451871358.jpeg" class="img-fluid" width="159"></p>
+<section id="gi-hotspot-analysis-of-pci" class="level4">
+<h4 class="anchored" data-anchor-id="gi-hotspot-analysis-of-pci"><em>Gi Hotspot Analysis of PCI</em>*</h4>
+<p>In this section, users can view the Gi* hotspot map, which identifies spatial clusters of high and low PCI values.</p>
+<ol type="1">
+<li><p><strong>Mapping Variable (Year)</strong>: Select the PCI year to analyze.</p>
+<ul>
+<li>Options: 2019, 2020, 2021, 2022.</li>
+</ul></li>
+<li><p><strong>Classification Method</strong>: Choose a method for classifying PCI values on the map.</p>
+<ul>
+<li><p>Options: <code>cont</code>, <code>equal</code>, <code>pretty</code>, <code>quantile</code>, <code>kmeans</code>, <code>hclust</code>, <code>bclust</code>, <code>fisher</code>, <code>jenks</code>.</p></li>
+<li><p>This dropdown lets users choose the classification method for dividing the data into classes or intervals.</p></li>
+</ul></li>
+<li><p><strong>Number of Classes</strong>: Set the number of classification levels (between 5 and 10) for the PCI values.</p>
+<ul>
+<li>A slider allows the user to set the number of data classes, which are the ranges into which the data is divided for color-coding on the map</li>
+</ul></li>
+<li><p><strong>Colour Scheme</strong>: Select a color scheme to visualize PCI hotspots and cold spots.</p>
+<ul>
+<li><p>Options: Blues, Reds, Greens, Yellow-Orange-Red, Yellow-Orange-Brown, Yellow-Green, Orange-Red.</p></li>
+<li><p>Users can choose a color scheme to represent different classes on the map.</p></li>
+</ul></li>
+<li><p><strong>Level of Transparency</strong>: Adjust the map’s opacity for better visual contrast (range: 0 to 1).</p>
+<ul>
+<li>This slider controls the transparency of the map layer, with a scale from 0 (fully transparent) to 1 (fully opaque).</li>
+</ul></li>
+</ol>
+<p><img src="images/photo_2024-11-10_20-32-08.jpg" class="img-fluid"></p>
+<p>The Main Panel displays the results based on the selected calibration inputs:</p>
+<p><strong>Emerging Hotspot Analysis of PCI</strong>: The Gi* hotspot map highlights significant PCI hotspots (high PCI clusters) and cold spots (low PCI clusters) across provinces for the selected year.</p>
+<p><img src="images/photo_2024-11-10_20-32-08-01.jpg" class="img-fluid"></p>
 </section>
-<section id="kai-feng" class="level3">
-<h3 class="anchored" data-anchor-id="kai-feng">Kai Feng</h3>
-<p><a href="https://sg.linkedin.com/in/kai-feng-ng-bb542215a">LinkedIn</a></p>
+</section>
+<section id="user-guide-for-fdi-spatial-pattern-analysis-and-hotspots-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="user-guide-for-fdi-spatial-pattern-analysis-and-hotspots-analysis">User Guide for FDI Spatial Pattern Analysis and Hotspots Analysis</h2>
+<section id="local-moran-of-fdi" class="level4">
+<h4 class="anchored" data-anchor-id="local-moran-of-fdi"><strong><em>Local Moran of FDI</em></strong></h4>
+<p>This section displays the LISA map, which highlights local clusters and spatial outliers based on Local Moran’s I statistic.</p>
+<ol type="1">
+<li><p><strong>Mapping Variable (Year)</strong>: Select the FDI category to analyze.</p>
+<ul>
+<li><p>Options are dynamically populated based on available data</p>
+<ul>
+<li><p>T1: Total Projects</p></li>
+<li><p>T2: Total Registered Capital</p></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Contiguity Method</strong>: Choose the spatial contiguity method.</p>
+<ul>
+<li><p>Options: <code>Queen</code> (default) or <code>Rook</code>.</p></li>
+<li><p>“Queen” considers all surrounding areas as neighbors, while “Rook” only considers those sharing borders. Selecting the appropriate method affects which areas are considered spatially related, impacting the detection of clusters or patterns.</p></li>
+</ul></li>
+<li><p><strong>Spatial Weights Style</strong>: Select a weighting style for spatial association.</p>
+<ul>
+<li><p>Options: <code>W</code> (Row standardized), <code>B</code> (Binary), <code>C</code> (Globally standardized), <code>U</code> (C / number of neighbors), <code>minmax</code>, <code>S</code> (Variance).</p></li>
+<li><p>This setting ensures that neighboring areas are weighted consistently, making the spatial correlation measures more meaningful and comparable across regions.</p></li>
+</ul></li>
+<li><p><strong>Number of Simulations</strong>: Set the number of simulations for significance testing (between 99 and 499).</p>
+<ul>
+<li>Users can adjust this based on the desired balance between accuracy and computational time.</li>
+</ul></li>
+<li><p><strong>Confidence Level</strong>: Select the confidence level for the LISA significance results.</p>
+<ul>
+<li><p>Options: 95% (0.05) or 99% (0.01).</p></li>
+<li><p>A higher confidence level (e.g., 99%) reduces the chance of false positives, ensuring the detected patterns are statistically reliable.</p></li>
+</ul></li>
+<li><p><strong>LISA Classification</strong>: Select a classification method for the LISA clusters.</p>
+<ul>
+<li><p>Options: <code>mean</code>, <code>median</code>, <code>pysal</code>.</p></li>
+<li><p>This affects the interpretation of clusters (e.g., high-high or low-low areas) and helps customize the analysis to specific policy or research needs.</p></li>
+</ul></li>
+<li><p><strong>Local Moran’s Statistic</strong>: Choose the type of Local Moran’s statistic to display.</p>
+<ul>
+<li>Options: <code>local moran(ii)</code>, <code>expectation(eii)</code>, <code>variance(var_ii)</code>, <code>std deviation(z_ii)</code>, <code>P-value</code></li>
+</ul></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/photo_2024-11-10_20-32-05-01.jpg" class="img-fluid figure-img"></p>
+<figcaption>The Main Panel displays the results based on the selected calibration inputs:</figcaption>
+</figure>
+</div>
+<p><strong>Local Moran of FDI</strong>: The LISA map shows spatial clusters of similar total projects and total registered capitals levels and outliers, indicating local dependencies or deviations.</p>
+</section>
+<section id="gi-hotspot-analysis-of-pci-1" class="level4">
+<h4 class="anchored" data-anchor-id="gi-hotspot-analysis-of-pci-1"><em>Gi Hotspot Analysis of PCI</em>*</h4>
+<p>In this section, users can view the Gi* hotspot map, which identifies spatial clusters of high and low PCI values.</p>
+<ol type="1">
+<li><p><strong>Mapping Variable (Year)</strong>: Select the FDI category to analyze.</p>
+<ul>
+<li>Options: Total Projects and Total registered capital</li>
+</ul></li>
+<li><p><strong>Classification Method</strong>: Choose a method for classifying PCI values on the map.</p>
+<ul>
+<li><p>Options: <code>cont</code>, <code>equal</code>, <code>pretty</code>, <code>quantile</code>, <code>kmeans</code>, <code>hclust</code>, <code>bclust</code>, <code>fisher</code>, <code>jenks</code>.</p></li>
+<li><p>This dropdown lets users choose the classification method for dividing the data into classes or intervals.</p></li>
+</ul></li>
+<li><p><strong>Number of Classes</strong>: Set the number of classification levels (between 5 and 10) for the PCI values.</p>
+<ul>
+<li>A slider allows the user to set the number of data classes, which are the ranges into which the data is divided for color-coding on the map</li>
+</ul></li>
+<li><p><strong>Colour Scheme</strong>: Select a color scheme to visualize PCI hotspots and cold spots.</p>
+<ul>
+<li><p>Options: Blues, Reds, Greens, Yellow-Orange-Red, Yellow-Orange-Brown, Yellow-Green, Orange-Red.</p></li>
+<li><p>Users can choose a color scheme to represent different classes on the map.</p></li>
+</ul></li>
+<li><p><strong>Level of Transparency</strong>: Adjust the map’s opacity for better visual contrast (range: 0 to 1).</p>
+<ul>
+<li>This slider controls the transparency of the map layer, with a scale from 0 (fully transparent) to 1 (fully opaque).</li>
+</ul></li>
+</ol>
+<p><img src="images/photo_2024-11-10_20-32-10.jpg" class="img-fluid"></p>
+<p>The Main Panel displays the results based on the selected calibration inputs:</p>
+<p><strong>Emerging Hotspot Analysis of PCI</strong>: The Gi* hotspot map highlights significant FDI category hotspots (high PCI clusters) and cold spots (low PCI clusters) across provinces for the selected year.</p>
+<p><img src="images/clipboard-4031888003.png" class="img-fluid"></p>
 
 
+</section>
 </section>
 </section>
 
