@@ -121,11 +121,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#user-guide" id="toc-user-guide" class="nav-link active" data-scroll-target="#user-guide">User Guide</a>
-  <ul class="collapse">
-  <li><a href="#user-guide-for-pci-spatial-pattern-analysis-and-hotspots-analysis" id="toc-user-guide-for-pci-spatial-pattern-analysis-and-hotspots-analysis" class="nav-link" data-scroll-target="#user-guide-for-pci-spatial-pattern-analysis-and-hotspots-analysis">User Guide for PCI Spatial Pattern Analysis and Hotspots Analysis</a></li>
-  <li><a href="#user-guide-for-fdi-spatial-pattern-analysis-and-hotspots-analysis" id="toc-user-guide-for-fdi-spatial-pattern-analysis-and-hotspots-analysis" class="nav-link" data-scroll-target="#user-guide-for-fdi-spatial-pattern-analysis-and-hotspots-analysis">User Guide for FDI Spatial Pattern Analysis and Hotspots Analysis</a></li>
-  </ul></li>
+  <li><a href="#pci-spatial-pattern-analysis-and-hotspots-analysis" id="toc-pci-spatial-pattern-analysis-and-hotspots-analysis" class="nav-link active" data-scroll-target="#pci-spatial-pattern-analysis-and-hotspots-analysis"><strong>PCI Spatial Pattern Analysis and Hotspots Analysis</strong></a></li>
+  <li><a href="#fdi-spatial-pattern-analysis-and-hotspots-analysis" id="toc-fdi-spatial-pattern-analysis-and-hotspots-analysis" class="nav-link" data-scroll-target="#fdi-spatial-pattern-analysis-and-hotspots-analysis"><strong>FDI Spatial Pattern Analysis and Hotspots Analysis</strong></a></li>
+  <li><a href="#global-explanatory-model" id="toc-global-explanatory-model" class="nav-link" data-scroll-target="#global-explanatory-model"><strong>Global Explanatory Model</strong></a></li>
+  <li><a href="#local-explanatory-model" id="toc-local-explanatory-model" class="nav-link" data-scroll-target="#local-explanatory-model"><strong>Local Explanatory Model</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -157,12 +156,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="user-guide" class="level1">
-<h1>User Guide</h1>
-<section id="user-guide-for-pci-spatial-pattern-analysis-and-hotspots-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="user-guide-for-pci-spatial-pattern-analysis-and-hotspots-analysis">User Guide for PCI Spatial Pattern Analysis and Hotspots Analysis</h2>
-<section id="local-moran-of-pci" class="level4">
-<h4 class="anchored" data-anchor-id="local-moran-of-pci"><strong><em>Local Moran of PCI</em></strong></h4>
+<p><br></p>
+<section id="pci-spatial-pattern-analysis-and-hotspots-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="pci-spatial-pattern-analysis-and-hotspots-analysis"><strong>PCI Spatial Pattern Analysis and Hotspots Analysis</strong></h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Local Moran of PCI</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Gi Hotspot Analysis of PCI*</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Emerging Hotspot Analysis of PCI</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>This section displays the LISA map, which highlights local clusters and spatial outliers based on Local Moran’s I statistic.</p>
 <ol type="1">
 <li><p><strong>Mapping Variable (Year)</strong>: Select the PCI year to analyze.</p>
@@ -205,9 +205,8 @@ ul.task-list li input[type="checkbox"] {
 <p>The Main Panel displays the results based on the selected calibration inputs:</p>
 <p><strong>Local Moran of PCI</strong>: The LISA map shows spatial clusters of similar PCI levels and outliers, indicating local dependencies or deviations.</p>
 <p><img src="images/clipboard-3822262858.png" class="img-fluid"></p>
-</section>
-<section id="gi-hotspot-analysis-of-pci" class="level4">
-<h4 class="anchored" data-anchor-id="gi-hotspot-analysis-of-pci"><em>Gi Hotspot Analysis of PCI</em>*</h4>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>In this section, users can view the Gi* hotspot map, which identifies spatial clusters of high and low PCI values.</p>
 <ol type="1">
 <li><p><strong>Mapping Variable (Year)</strong>: Select the PCI year to analyze.</p>
@@ -234,15 +233,22 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ol>
 <p><img src="images/photo_2024-11-10_20-32-08.jpg" class="img-fluid"></p>
-<p>The Main Panel displays the results based on the selected calibration inputs:</p>
-<p><strong>Emerging Hotspot Analysis of PCI</strong>: The Gi* hotspot map highlights significant PCI hotspots (high PCI clusters) and cold spots (low PCI clusters) across provinces for the selected year.</p>
+<p>The Main Panel displays the results based on the selected calibration inputs</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>The Gi* hotspot map highlights significant PCI hotspots (high PCI clusters) and cold spots (low PCI clusters) across provinces for the selected year.</p>
 <p><img src="images/photo_2024-11-10_20-32-08-01.jpg" class="img-fluid"></p>
+</div>
+</div>
+</div>
+<p><br></p>
 </section>
-</section>
-<section id="user-guide-for-fdi-spatial-pattern-analysis-and-hotspots-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="user-guide-for-fdi-spatial-pattern-analysis-and-hotspots-analysis">User Guide for FDI Spatial Pattern Analysis and Hotspots Analysis</h2>
-<section id="local-moran-of-fdi" class="level4">
-<h4 class="anchored" data-anchor-id="local-moran-of-fdi"><strong><em>Local Moran of FDI</em></strong></h4>
+<section id="fdi-spatial-pattern-analysis-and-hotspots-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="fdi-spatial-pattern-analysis-and-hotspots-analysis"><strong>FDI Spatial Pattern Analysis and Hotspots Analysis</strong></h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Local Moran of FDI</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Gi Hotspot Analysis of FDI*</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Emerging Hotspot Analysis of FDI</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>This section displays the LISA map, which highlights local clusters and spatial outliers based on Local Moran’s I statistic.</p>
 <ol type="1">
 <li><p><strong>Mapping Variable (Year)</strong>: Select the FDI category to analyze.</p>
@@ -289,10 +295,9 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p><strong>Local Moran of FDI</strong>: The LISA map shows spatial clusters of similar total projects and total registered capitals levels and outliers, indicating local dependencies or deviations.</p>
-</section>
-<section id="gi-hotspot-analysis-of-pci-1" class="level4">
-<h4 class="anchored" data-anchor-id="gi-hotspot-analysis-of-pci-1"><em>Gi Hotspot Analysis of PCI</em>*</h4>
-<p>In this section, users can view the Gi* hotspot map, which identifies spatial clusters of high and low PCI values.</p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>In this section, users can view the Gi* hotspot map, which identifies spatial clusters of high and low FDI values.</p>
 <ol type="1">
 <li><p><strong>Mapping Variable (Year)</strong>: Select the FDI category to analyze.</p>
 <ul>
@@ -318,13 +323,263 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ol>
 <p><img src="images/photo_2024-11-10_20-32-10.jpg" class="img-fluid"></p>
-<p>The Main Panel displays the results based on the selected calibration inputs:</p>
-<p><strong>Emerging Hotspot Analysis of PCI</strong>: The Gi* hotspot map highlights significant FDI category hotspots (high PCI clusters) and cold spots (low PCI clusters) across provinces for the selected year.</p>
+<p>The Main Panel displays the results based on the selected calibration inputs</p>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>The Gi* hotspot map highlights significant FDI category hotspots (high PCI clusters) and cold spots (low PCI clusters) across provinces for the selected year.</p>
 <p><img src="images/clipboard-4031888003.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="global-explanatory-model" class="level2">
+<h2 class="anchored" data-anchor-id="global-explanatory-model"><strong>Global Explanatory Model</strong></h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Multiple Linear Regression</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Stepwise Model Selection</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Visualise Model Parameter</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<section id="step-by-step-instructions" class="level4">
+<h4 class="anchored" data-anchor-id="step-by-step-instructions">Step-by-Step Instructions</h4>
+<ol type="1">
+<li><p><strong>Select an FDI Measure</strong>:</p>
+<ul>
+<li>Use the tabs at the top to choose between <strong>Total Number of Projects</strong> or <strong>Total Registered Capital</strong> as the FDI measure you want to analyze.</li>
+</ul></li>
+<li><p><strong>Choose PCI Factors</strong>:</p>
+<ul>
+<li>In the left panel, you’ll find a list of available PCI factors (such as Entry Costs, Transparency, etc.). Select any combination of these factors to include in your customized model.</li>
+</ul></li>
+<li><p><strong>Update the Plot</strong>:</p>
+<ul>
+<li>Once you’ve made your PCI factor selections, click the <strong>Update Plot</strong> button to run the model with your chosen factors and refresh the results.</li>
+</ul></li>
+<li><p><strong>View the Results</strong>:</p>
+<ul>
+<li><p>The results are displayed in two main sections:</p>
+<ul>
+<li><p><strong>Model Summary</strong> (Left Panel): This panel provides an overall summary of the model, including performance metrics like Adjusted R², to show how well the model explains the variation in FDI based on the selected factors.</p></li>
+<li><p><strong>Factor Contribution</strong> (Right Panel): This table displays detailed coefficient estimates for each selected factor, showing their individual contributions and significance within the model.</p></li>
+</ul></li>
+</ul></li>
+</ol>
+</section>
+<section id="tips-for-interpretation" class="level4">
+<h4 class="anchored" data-anchor-id="tips-for-interpretation">Tips for Interpretation</h4>
+<ul>
+<li><p><strong>Adjusted R²</strong>: Look at this metric in the Model Summary panel to gauge how well your selected PCI factors explain variations in FDI.</p></li>
+<li><p><strong>Factor Contribution Table</strong>: Higher coefficients indicate a stronger impact of the factor on FDI. Positive values suggest a positive influence on FDI, while negative values suggest a negative influence.</p></li>
+</ul>
+<p><img src="images/photo_2024-11-13_22-38-45.jpg" class="img-fluid"></p>
+</section>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<section id="step-by-step-instructions-1" class="level4">
+<h4 class="anchored" data-anchor-id="step-by-step-instructions-1">Step-by-Step Instructions</h4>
+<ol type="1">
+<li><p><strong>Select an FDI Measure</strong>:</p>
+<ul>
+<li>Use the tabs at the top to choose between <strong>Total Number of Projects</strong> or <strong>Total Registered Capital</strong> as the FDI measure you want to analyze.</li>
+</ul></li>
+<li><p><strong>Choose a Stepwise Approach</strong>:</p>
+<ul>
+<li><p>In the left panel, select one of the three stepwise methods:</p>
+<ul>
+<li><p><strong>Forward</strong>: Adds PCI factors one at a time based on their significance.</p></li>
+<li><p><strong>Backward</strong>: Removes less significant PCI factors step-by-step.</p></li>
+<li><p><strong>Both</strong>: Combines forward and backward selection to find the best balance of factors.</p></li>
+</ul></li>
+<li><p>Additionally, select a <strong>Confidence Level</strong> for the chosen approach to set the threshold for including/excluding factors in the model.</p></li>
+</ul></li>
+<li><p><strong>Generate Results</strong>:</p>
+<ul>
+<li><p>After selecting the approach and confidence level, click the <strong>Update Plot</strong> button to display the results.</p></li>
+<li><p>The results include:</p>
+<ul>
+<li><p><strong>Summary Table</strong> (Right Panel): A breakdown of model metrics and selected factors.</p></li>
+<li><p><strong>Plot</strong>: A visual summary of how each approach affects the model’s performance.</p></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Compare Stepwise Approaches Using the Radar Chart</strong>:</p>
+<ul>
+<li><p><strong>Bottom Left Panel</strong>: Here, you can compare how each approach performs by selecting <strong>Forward</strong>, <strong>Backward</strong>, and/or <strong>Both</strong> for comparison.</p></li>
+<li><p>Set a <strong>Confidence Level</strong> for this comparison.</p></li>
+<li><p>Click <strong>Update Radar Chart</strong> to generate the radar chart.</p></li>
+</ul></li>
+<li><p><strong>Interpret the Radar Chart</strong>:</p>
+<ul>
+<li>The radar chart (Right Panel) provides a side-by-side view of model performance across the selected stepwise approaches, helping you see which approach and confidence level best captures the relationship between PCI factors and FDI.</li>
+</ul></li>
+</ol>
+</section>
+<section id="tips-for-interpretation-1" class="level4">
+<h4 class="anchored" data-anchor-id="tips-for-interpretation-1">Tips for Interpretation</h4>
+<ul>
+<li><p><strong>Summary Table</strong>: Higher R² values or lower AIC/BIC scores in the table indicate a better-fitting model for each stepwise method.</p></li>
+<li><p><strong>Radar Chart</strong>: A wider spread in the radar chart suggests better model performance. Compare across approaches to see which selection method aligns best with your confidence level.</p></li>
+</ul>
+<p><img src="images/Screenshot 2024-11-13 225534.png" class="img-fluid"></p>
+</section>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<section id="step-by-step-instructions-2" class="level4">
+<h4 class="anchored" data-anchor-id="step-by-step-instructions-2">Step-by-Step Instructions</h4>
+<ol type="1">
+<li><p><strong>Select an FDI Measure</strong>:</p>
+<ul>
+<li>Begin by selecting either <strong>Total Number of Projects</strong> or <strong>Total Registered Capital</strong> from the tabs at the top to choose the FDI metric you want to examine.</li>
+</ul></li>
+<li><p><strong>Choose a Stepwise Approach and Confidence Level</strong>:</p>
+<ul>
+<li><p>In the left panel, select one of the following stepwise approaches to refine the model:</p>
+<ul>
+<li><p><strong>Forward</strong>: Adds factors based on significance.</p></li>
+<li><p><strong>Backward</strong>: Removes less significant factors step-by-step.</p></li>
+<li><p><strong>Both</strong>: Balances forward and backward selection.</p></li>
+</ul></li>
+<li><p>Set a <strong>Confidence Level</strong> to control the threshold for including or excluding PCI factors in the model.</p></li>
+</ul></li>
+<li><p><strong>Generate the Plot</strong>:</p>
+<ul>
+<li><p>Once you’ve selected your approach and confidence level, click <strong>Update Plot</strong> to view the results.</p></li>
+<li><p>The results will display on the right panel, where each PCI factor’s influence is shown:</p>
+<ul>
+<li><p><strong>Longer Lines</strong> indicate greater variation for that factor.</p></li>
+<li><p><strong>Rightward Positions</strong> represent positive autocorrelation, suggesting that increases in this factor are positively correlated with the FDI metric.</p></li>
+<li><p><strong>Leftward Positions</strong> represent negative autocorrelation, showing a negative relationship with FDI.</p></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Sort Results</strong>:</p>
+<ul>
+<li>To view factors in <strong>Ascending</strong> or <strong>Descending</strong> order by impact, use the sort feature in the left panel. This can help you prioritize which PCI factors have the most or least influence on FDI based on your analysis.</li>
+</ul></li>
+</ol>
+<p><img src="images/image_2024-11-13_23-08-43.png" class="img-fluid"></p>
+</section>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="local-explanatory-model" class="level2">
+<h2 class="anchored" data-anchor-id="local-explanatory-model"><strong>Local Explanatory Model</strong></h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Bandwidth Comparison</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Visualise Local R2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Visualise Coefficient Estimates</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<section id="step-by-step-instructions-3" class="level4">
+<h4 class="anchored" data-anchor-id="step-by-step-instructions-3">Step-by-Step Instructions</h4>
+<ol type="1">
+<li><p><strong>Select an FDI Measure</strong>:</p>
+<ul>
+<li>At the top, navigate to either <strong>Total Number of Projects</strong> or <strong>Total Registered Capital</strong> to select the FDI measure you want to investigate.</li>
+</ul></li>
+<li><p><strong>Choose Bandwidth Approaches and Kernels</strong>:</p>
+<ul>
+<li><p>In the left panel, configure your <strong>Fixed</strong> and <strong>Adaptive</strong> bandwidth settings individually:</p>
+<ul>
+<li><p><strong>Bandwidth Approach</strong>: Select either <strong>Cross Validation</strong> or <strong>Akaike Information Criterion (AIC)</strong>. Each approach evaluates bandwidth differently, so trying both can help identify which fits best with your data.</p></li>
+<li><p><strong>Kernel Type</strong>: For each bandwidth type, select a kernel function from the options:</p>
+<ul>
+<li><p><strong>Gaussian</strong>: Applies a normal distribution weight.</p></li>
+<li><p><strong>Exponential</strong>: Prioritizes nearby values, tapering with distance.</p></li>
+<li><p><strong>Bisquare</strong>: Gives weight within a defined radius, tapering sharply beyond it.</p></li>
+<li><p><strong>Tricube</strong>: Similar to Bisquare but with a smoother taper.</p></li>
+<li><p><strong>Boxcar</strong>: Applies equal weight within a set distance.</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Generate the Comparison Plot</strong>:</p>
+<ul>
+<li><p>Once you’ve selected your bandwidth approach and kernel for both <strong>Fixed</strong> and <strong>Adaptive</strong> bandwidth types, click <strong>Update Plot</strong> to generate the visualization.</p></li>
+<li><p>The resulting comparison plot will display on the right panel, with each bandwidth type side by side, letting you easily compare their effects.</p></li>
+</ul></li>
+</ol>
+<p><img src="images/image_2024-11-13_23-15-06.png" class="img-fluid"></p>
+</section>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<section id="step-by-step-instructions-4" class="level4">
+<h4 class="anchored" data-anchor-id="step-by-step-instructions-4">Step-by-Step Instructions</h4>
+<ol type="1">
+<li><p><strong>Select an FDI Measure</strong>:</p>
+<ul>
+<li>Begin by navigating to either <strong>Total Number of Projects</strong> or <strong>Total Registered Capital</strong> at the top to specify the FDI measure for analysis.</li>
+</ul></li>
+<li><p><strong>Customize Bandwidth, Approach, and Kernel Settings</strong>:</p>
+<ul>
+<li><p>In the left panel, configure the Local R² model settings:</p>
+<ul>
+<li><p><strong>Bandwidth Type</strong>: Choose between <strong>Fixed</strong> and <strong>Adaptive</strong> to determine how bandwidth adjusts across the model:</p>
+<ul>
+<li><p><strong>Fixed</strong> applies the same bandwidth across all regions.</p></li>
+<li><p><strong>Adaptive</strong> adjusts bandwidth based on regional density.</p></li>
+</ul></li>
+<li><p><strong>Approach</strong>: Select from <strong>Cross Validation</strong> or <strong>Akaike Information Criterion (AIC)</strong> to optimize the model fit.</p></li>
+<li><p><strong>Kernel</strong>: Choose a kernel function to define how distances are weighted within the model:</p>
+<ul>
+<li><p><strong>Gaussian</strong>: Applies a normal distribution weight.</p></li>
+<li><p><strong>Exponential</strong>: Gives more weight to closer points, tapering with distance.</p></li>
+<li><p><strong>Bisquare</strong>: Applies weight within a set radius, dropping sharply beyond it.</p></li>
+<li><p><strong>Tricube</strong>: Similar to Bisquare but tapers more smoothly.</p></li>
+<li><p><strong>Boxcar</strong>: Assigns equal weight within a fixed distance.</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Generate the Local R² Map</strong>:</p>
+<ul>
+<li><p>Once you’ve selected the bandwidth, approach, and kernel, click <strong>Update Plot</strong> to generate the visualization.</p></li>
+<li><p>The resulting map, displayed on the right, will show the Local R² values by province, allowing you to visually interpret where the model is performing well and where adjustments might be needed.</p></li>
+</ul></li>
+</ol>
+<p><img src="images/image_2024-11-13_23-17-48.png" class="img-fluid"></p>
+</section>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<section id="step-by-step-instructions-5" class="level4">
+<h4 class="anchored" data-anchor-id="step-by-step-instructions-5">Step-by-Step Instructions</h4>
+<ol type="1">
+<li><p><strong>Select an FDI Measure</strong>:</p>
+<ul>
+<li>Begin by choosing <strong>Total Number of Projects</strong> or <strong>Total Registered Capital</strong> at the top to set the focus of the FDI analysis.</li>
+</ul></li>
+<li><p><strong>Configure Bandwidth, Approach, and Kernel Settings</strong>:</p>
+<ul>
+<li><p>In the left panel, set up the model specifications:</p>
+<ul>
+<li><p><strong>Bandwidth Type</strong>: Choose between <strong>Fixed</strong> and <strong>Adaptive</strong> for the bandwidth:</p>
+<ul>
+<li><p><strong>Fixed</strong> maintains the same bandwidth across all regions.</p></li>
+<li><p><strong>Adaptive</strong> adjusts bandwidth according to regional density.</p></li>
+</ul></li>
+<li><p><strong>Approach</strong>: Pick either <strong>Cross Validation</strong> or <strong>Akaike Information Criterion (AIC)</strong> for model optimization.</p></li>
+<li><p><strong>Kernel</strong>: Select a kernel function to define distance weighting:</p>
+<ul>
+<li><p><strong>Gaussian</strong>: Applies weights using a normal distribution.</p></li>
+<li><p><strong>Exponential</strong>: Heavily weights closer points with a gradual tapering.</p></li>
+<li><p><strong>Bisquare</strong>: Weights points within a fixed radius, tapering sharply outside.</p></li>
+<li><p><strong>Tricube</strong>: Similar to Bisquare but with smoother tapering.</p></li>
+<li><p><strong>Boxcar</strong>: Assigns equal weight within a fixed distance.</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Select Independent PCI Variables</strong>:</p>
+<ul>
+<li>Below the kernel setting, select the <strong>PCI factor</strong> (e.g., Entry Costs, Transparency) you wish to visualize. This choice will help focus on the specific impact of individual factors on the model.</li>
+</ul></li>
+<li><p><strong>Generate the Coefficient Estimates Visualization</strong>:</p>
+<ul>
+<li><p>After configuring the settings, click <strong>Update Plot</strong> to create the visualization.</p></li>
+<li><p>The results will appear on the right side as a map, showing a side-by-side comparison of the <strong>Standard Error (SE)</strong> and <strong>TV</strong> for each province. This enables you to interpret the effect size and significance of each PCI factor locally.</p></li>
+</ul></li>
+</ol>
+<p><img src="images/image_2024-11-13_23-21-43.png" class="img-fluid"></p>
+</section>
+</div>
+</div>
+</div>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
