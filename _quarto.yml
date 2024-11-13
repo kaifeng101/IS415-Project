@@ -9,7 +9,7 @@ website:
       text: About Us
     - href: about.qmd
       text: Project
-    - href: about.qmd
+    - href: poster.qmd
       text: Poster
     - href: about.qmd
       text: User Guide
