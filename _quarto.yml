@@ -5,9 +5,9 @@ website:
   title: "Vietnam PCI Influence Analysis"
   navbar:
     left:
-    - href: about.qmd
+    - href: aboutus.qmd
       text: About Us
-    - href: about.qmd
+    - href: project.qmd
       text: Project
     - href: poster.qmd
       text: Poster

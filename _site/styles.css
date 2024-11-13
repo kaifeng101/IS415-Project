@@ -1,1 +1,5 @@
 /* css styles */
+body {
+  background-color: #f0f0f5; /* Light gray background */
+  color: #333333; /* Dark text for contrast */
+}
