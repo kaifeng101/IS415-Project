@@ -33,5 +33,40 @@
     "title": "User Guide",
     "section": "",
     "text": "This section displays the LISA map, which highlights local clusters and spatial outliers based on Local Moran’s I statistic.\n\nMapping Variable (Year): Select the FDI category to analyze.\n\nOptions are dynamically populated based on available data\n\nT1: Total Projects\nT2: Total Registered Capital\n\n\nContiguity Method: Choose the spatial contiguity method.\n\nOptions: Queen (default) or Rook.\n“Queen” considers all surrounding areas as neighbors, while “Rook” only considers those sharing borders. Selecting the appropriate method affects which areas are considered spatially related, impacting the detection of clusters or patterns.\n\nSpatial Weights Style: Select a weighting style for spatial association.\n\nOptions: W (Row standardized), B (Binary), C (Globally standardized), U (C / number of neighbors), minmax, S (Variance).\nThis setting ensures that neighboring areas are weighted consistently, making the spatial correlation measures more meaningful and comparable across regions.\n\nNumber of Simulations: Set the number of simulations for significance testing (between 99 and 499).\n\nUsers can adjust this based on the desired balance between accuracy and computational time.\n\nConfidence Level: Select the confidence level for the LISA significance results.\n\nOptions: 95% (0.05) or 99% (0.01).\nA higher confidence level (e.g., 99%) reduces the chance of false positives, ensuring the detected patterns are statistically reliable.\n\nLISA Classification: Select a classification method for the LISA clusters.\n\nOptions: mean, median, pysal.\nThis affects the interpretation of clusters (e.g., high-high or low-low areas) and helps customize the analysis to specific policy or research needs.\n\nLocal Moran’s Statistic: Choose the type of Local Moran’s statistic to display.\n\nOptions: local moran(ii), expectation(eii), variance(var_ii), std deviation(z_ii), P-value\n\n\n\n\n\nThe Main Panel displays the results based on the selected calibration inputs:\n\n\nLocal Moran of FDI: The LISA map shows spatial clusters of similar total projects and total registered capitals levels and outliers, indicating local dependencies or deviations.\n\n\n\nIn this section, users can view the Gi* hotspot map, which identifies spatial clusters of high and low PCI values.\n\nMapping Variable (Year): Select the FDI category to analyze.\n\nOptions: Total Projects and Total registered capital\n\nClassification Method: Choose a method for classifying PCI values on the map.\n\nOptions: cont, equal, pretty, quantile, kmeans, hclust, bclust, fisher, jenks.\nThis dropdown lets users choose the classification method for dividing the data into classes or intervals.\n\nNumber of Classes: Set the number of classification levels (between 5 and 10) for the PCI values.\n\nA slider allows the user to set the number of data classes, which are the ranges into which the data is divided for color-coding on the map\n\nColour Scheme: Select a color scheme to visualize PCI hotspots and cold spots.\n\nOptions: Blues, Reds, Greens, Yellow-Orange-Red, Yellow-Orange-Brown, Yellow-Green, Orange-Red.\nUsers can choose a color scheme to represent different classes on the map.\n\nLevel of Transparency: Adjust the map’s opacity for better visual contrast (range: 0 to 1).\n\nThis slider controls the transparency of the map layer, with a scale from 0 (fully transparent) to 1 (fully opaque).\n\n\n\nThe Main Panel displays the results based on the selected calibration inputs:\nEmerging Hotspot Analysis of PCI: The Gi* hotspot map highlights significant FDI category hotspots (high PCI clusters) and cold spots (low PCI clusters) across provinces for the selected year."
+  },
+  {
+    "objectID": "project.html#description",
+    "href": "project.html#description",
+    "title": "Impact of PCI Dimensions on FDI in Vietnam’s Provinces",
+    "section": "Description",
+    "text": "Description\nOur project explores how Provincial Competitiveness Index (PCI) factors impact Foreign Direct Investment (FDI) across Vietnam’s provinces. FDI is crucial for economic development, yet factors influencing its distribution at the provincial level are complex and multifaceted. Our study aims to identify the local and regional dynamics driving investment attraction, enabling policymakers to address economic disparities and promote balanced development.\nTo achieve this, we apply spatial analytics methods, including spatial pattern analysis and hotspot analysis, to examine how neighboring regions’ competitiveness correlates with local FDI levels. By identifying clusters of high and low competitiveness and regions with extreme FDI values, we uncover key influencing factors that help explain regional investment patterns.\nOur approach includes building both global and local models using multiple linear regression and stepwise model selection. These models highlight how PCI dimensions like entry costs and transparency influence FDI, with visualizations that display the strength of relationships and model fit across provinces. Local models provide province-specific insights, offering a tailored understanding of where policies may need improvement."
+  },
+  {
+    "objectID": "project.html#proposal",
+    "href": "project.html#proposal",
+    "title": "Impact of PCI Dimensions on FDI in Vietnam’s Provinces",
+    "section": "Proposal",
+    "text": "Proposal"
+  },
+  {
+    "objectID": "project.html#overview-of-issues",
+    "href": "project.html#overview-of-issues",
+    "title": "Impact of PCI Dimensions on FDI in Vietnam’s Provinces",
+    "section": "Overview of Issues:",
+    "text": "Overview of Issues:\n\nUneven Regional Competitiveness: There is a marked disparity in Provincial Competitive Index (PCI) scores across Vietnam, leading to varying levels of economic development.\nFDI Distribution Inequality: Foreign Direct Investment (FDI) is concentrated in specific areas, with emerging hotspots that create imbalanced economic growth.\nInfluence of PCI Sub-Indices on FDI: The role of individual PCI factors in attracting FDI is unclear, limiting strategic improvements for competitiveness across provinces.\n\nStatement of Problem: Understanding the spatial and economic relationship between PCI sub-indices and FDI is essential to fostering balanced development across regions in Vietnam."
+  },
+  {
+    "objectID": "project.html#why-this-matters",
+    "href": "project.html#why-this-matters",
+    "title": "Impact of PCI Dimensions on FDI in Vietnam’s Provinces",
+    "section": "Why This Matters:",
+    "text": "Why This Matters:\n\nRegional Development: Addressing competitiveness at a provincial level can reduce economic disparity and encourage widespread growth.\nInvestment Attraction: FDI is a major driver of economic development in Vietnam; insights into the determinants of investment attraction can inform better-targeted policy-making."
+  },
+  {
+    "objectID": "project.html#challenges",
+    "href": "project.html#challenges",
+    "title": "Impact of PCI Dimensions on FDI in Vietnam’s Provinces",
+    "section": "Challenges:",
+    "text": "Challenges:\n\nData Complexity: PCI and FDI data involve multiple dimensions, requiring advanced spatial and statistical analysis techniques to identify patterns.\nDynamic Spatial Relationships: Emerging investment hotspots and regional competitiveness are continuously evolving, making static analysis ineffective for long-term policy decisions."
   }
 ]
