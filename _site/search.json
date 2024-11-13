@@ -1,16 +1,16 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "IS455",
     "section": "",
     "text": "Welcome to IS455 Geospatial Analytics and Application. In this website, you will find my coursework prepared for this course."
+  },
+  {
+    "objectID": "aboutus.html",
+    "href": "aboutus.html",
+    "title": "Project: Vietnam PCI Influence Analysis on FDI",
+    "section": "",
+    "text": "About Us\nWe are a dedicated two-member team, currently in our penultimate (third) year at the School of Computing and Information Systems. With a shared passion for technology and data-driven solutions, we focus on leveraging our expertise to create impactful, user-centric applications.\nOur academic journey has equipped us with solid skills in computing, analytics, and problem-solving, which we apply to every project. Driven by a commitment to innovation and excellence, we strive to build solutions that make a difference in today’s tech-driven world.\n\n\n\nMeet our Team\n\n\nEdwin Tan\nLinkedIn\n\n\n\n\nKai Feng\nLinkedIn"
   }
 ]
