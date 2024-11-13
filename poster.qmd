@@ -7,4 +7,4 @@ execute:
   freeze: true
 ---
 
-![](images/Group 1_Poster-01.jpg)
+![](images/Group%201_Poster-01.jpg)
