@@ -1,8 +1,51 @@
 ---
-title: "Project: Vietnam PCI Influence Analysis on FDI"
-date: "Nov 13, 2024"
-execute:
-  eval: true
-  echo: true
-  freeze: true
+title: "Impact of PCI Dimensions on FDI in Vietnam's Provinces"
+author: "Kai Feng & Edwin Tan"
 ---
+
+![](images/clipboard-2799356881.png)
+
+# **Issues and Problems**
+
+## **Overview of Issues:**
+
+-   **Uneven Regional Competitiveness**: There is a marked disparity in Provincial Competitive Index (PCI) scores across Vietnam, leading to varying levels of economic development.
+
+-   **FDI Distribution Inequality**: Foreign Direct Investment (FDI) is concentrated in specific areas, with emerging hotspots that create imbalanced economic growth.
+
+-   **Influence of PCI Sub-Indices on FDI**: The role of individual PCI factors in attracting FDI is unclear, limiting strategic improvements for competitiveness across provinces.
+
+**Statement of Problem:** Understanding the spatial and economic relationship between PCI sub-indices and FDI is essential to fostering balanced development across regions in Vietnam.
+
+# **Motivation**
+
+## **Why This Matters:**
+
+-   **Regional Development**: Addressing competitiveness at a provincial level can reduce economic disparity and encourage widespread growth.
+
+-   **Investment Attraction**: FDI is a major driver of economic development in Vietnam; insights into the determinants of investment attraction can inform better-targeted policy-making.
+
+## **Challenges:**
+
+-   **Data Complexity**: PCI and FDI data involve multiple dimensions, requiring advanced spatial and statistical analysis techniques to identify patterns.
+
+-   **Dynamic Spatial Relationships**: Emerging investment hotspots and regional competitiveness are continuously evolving, making static analysis ineffective for long-term policy decisions.
+
+# Objectives
+
+-   **Analyze Spatial Patterns of PCI and FDI**\
+    Use spatial analysis to identify clusters of high and low competitiveness across Vietnamese provinces and examine how these patterns correlate with FDI distribution.
+
+-   **Identify Emerging PCI and FDI Hotspots**\
+    Detect regions showing significant growth in foreign investment using hotspot analysis, helping to reveal trends and areas of rapid economic development.
+
+-   **Examine PCI Sub-Index Impact on FDI**\
+    Conduct regression analysis to determine which PCI sub-indices most strongly influence FDI, providing insights into key drivers of investment attraction.
+
+# Description
+
+Our project explores how **Provincial Competitiveness Index (PCI)** factors impact **Foreign Direct Investment (FDI) across Vietnam's provinces**. FDI is crucial for economic development, yet factors influencing its distribution at the provincial level are complex and multifaceted. Our study aims to i**dentify the local and regional dynamics** driving investment attraction, **enabling policymakers to address economic disparities and promote balanced development**.
+
+To achieve this, we apply **spatial analytics methods,** including spatial pattern analysis and hotspot analysis, to examine how neighboring regions' competitiveness **correlates with local FDI levels**. By identifying clusters of **high and low competitiveness and regions** with extreme FDI values, we uncover key influencing factors that help explain regional investment patterns.
+
+Our approach includes building both global and local models using **multiple linear regression and stepwise model selection**. These models highlight how PCI dimensions like entry costs and transparency influence FDI, with visualizations that display the **strength of relationships and model fit across provinces**. Local models provide province-specific insights, offering a tailored understanding of where policies may need improvement.
