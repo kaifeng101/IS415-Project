@@ -1,0 +1,33 @@
+---
+title: "Project: Vietnam PCI Influence Analysis on FDI"
+execute:
+  eval: true
+  echo: true
+  freeze: true
+---
+
+<br/>
+
+# About Us
+
+We are a dedicated two-member team, currently in our penultimate (third) year at the School of Computing and Information Systems. With a shared passion for technology and data-driven solutions, we focus on leveraging our expertise to create impactful, user-centric applications.
+
+Our academic journey has equipped us with solid skills in computing, analytics, and problem-solving, which we apply to every project. Driven by a commitment to innovation and excellence, we strive to build solutions that make a difference in today’s tech-driven world.
+
+<br/>
+
+# Meet our Team 
+
+![](images/clipboard-659646825.jpeg){width="156"}
+
+### Edwin Tan
+
+[LinkedIn](https://www.linkedin.com/in/edwin-tan-jun-lin-a20a4b174/?trk=contact-info)
+
+<br/>
+
+![](images/clipboard-1451871358.jpeg){width="159"}
+
+### Kai Feng
+
+[LinkedIn](https://sg.linkedin.com/in/kai-feng-ng-bb542215a)
