@@ -13,6 +13,10 @@ website:
       text: Poster
     - href: user_guide.qmd
       text: User Guide
+    - text: Shiny Application
+      href: https://is415-gaa.shinyapps.io/VietnamPCIInfluence/
+      target: _blank
+      
 
 format:
   html:
